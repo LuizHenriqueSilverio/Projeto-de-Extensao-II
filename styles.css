@@ -1,5 +1,10 @@
 /* Classe personalizada com tom de azul */
 .custom-blue-header {
-    background-color: #007bff; /* Tom de azul personalizado */
+    background-color: #1175B3; /* Tom de azul personalizado */
     color: #fff; /* Cor do texto */
+}
+
+body {
+    background-color: #B8D6E8;
+    font-family: 'Roboto', sans-serif;
 }
