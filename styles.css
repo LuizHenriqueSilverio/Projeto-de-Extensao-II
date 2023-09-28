@@ -2,10 +2,18 @@
     box-sizing: border-box;
 }
 
-/* Classe personalizada com tom de azul */
+.custom-navbar {
+    background-color: #1175B3; 
+    color: #fff;
+}
+
+.custom-navbar .nav-link {
+    color:#fff;
+}
+
 .custom-blue-header {
-    background-color: #1175B3; /* Tom de azul personalizado */
-    color: #fff; /* Cor do texto */
+    background-color: #1175B3;
+    color: #fff;
 }
 
 body {
@@ -20,17 +28,6 @@ body {
 .carrosel{
     box-shadow: 2px 2px 4px black;
     overflow: hidden;
-    height: 500px;
-    width: 500px;
-}
-
-.container{
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
-}
-
-img{
-    object-fit: cover;
-    height: 500PX;
-    width: 500PX;
+    height: 100%;
+    width: 100%;
 }
