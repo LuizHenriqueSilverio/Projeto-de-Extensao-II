@@ -1,3 +1,22 @@
+
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
+
+let idx = 0;
+
+function carrosel(){
+    idx++;
+
+    if(idx > img.length - 1){
+        idx = 0;
+    }
+
+    imgs.style.transform = 'translateX(${-idx * 500}px)'
+}
+
+setInterval(carrosel, 1800);
+
+
 // Função para lidar com o clique no botão de doação
 document.getElementById("donateBtn").addEventListener("click", function () {
     // Substitua esta linha com a lógica real de redirecionamento para uma página de doação
