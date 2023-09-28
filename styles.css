@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 /* Classe personalizada com tom de azul */
 .custom-blue-header {
     background-color: #1175B3; /* Tom de azul personalizado */
@@ -5,6 +9,28 @@
 }
 
 body {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
     background-color: #e7f1f7;
     font-family: 'Roboto', sans-serif;
+}
+
+.carrosel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
+
+.container{
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+img{
+    object-fit: cover;
+    height: 500PX;
+    width: 500PX;
 }
