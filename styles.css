@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+body {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #e7f1f7;
+    font-family: 'Roboto', sans-serif;
+}
+
 .custom-navbar {
     background-color: #1175B3; 
     color: #fff;
@@ -14,15 +23,6 @@
 .custom-blue-header {
     background-color: #1175B3;
     color: #fff;
-}
-
-body {
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    min-height: 100vh;
-    background-color: #e7f1f7;
-    font-family: 'Roboto', sans-serif;
 }
 
 .carrosel{
