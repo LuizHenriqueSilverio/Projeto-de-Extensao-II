@@ -54,6 +54,7 @@ body {
     background: -moz-linear-gradient(90deg,#fbf7f7 0%, #6a7acb 20%);  
     border: 1px solid;
     border-radius: 30px;
+    margin-bottom: 1.25rem;
 }
 
 #title2{
