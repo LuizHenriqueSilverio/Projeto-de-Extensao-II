@@ -25,12 +25,16 @@ body {
     color: #fff;
 }
 
-.carrosel{
-    box-shadow: 2px 2px 4px black;
+.carousel{
+    box-shadow: 2px 4px 19px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 4px 19px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 19px 5px rgba(0,0,0,0.75);
     overflow: hidden;
     height: 100%;
     width: 100%;
+    border-radius: 1rem;
 }
+
 
 .custom-navbar a{
     background: #fbf7f7;
