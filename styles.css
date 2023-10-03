@@ -24,10 +24,3 @@ body {
     background-color: #1175B3;
     color: #fff;
 }
-
-.carrosel{
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-}
