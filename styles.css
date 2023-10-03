@@ -40,3 +40,14 @@ body {
     border: 1px solid;
     border-radius: 30px;  
 }
+
+#title{
+    padding: 0.5rem;
+    color: white;
+    background: #fbf7f7;
+    background: linear-gradient(90deg,#fbf7f7 0%, #6a7acb 20%);
+    background: -webkit-linear-gradient(90deg,#fbf7f7 0%, #6a7acb 20%);
+    background: -moz-linear-gradient(90deg,#fbf7f7 0%, #6a7acb 20%);  
+    border: 1px solid;
+    border-radius: 30px;
+}
