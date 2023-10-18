@@ -1,9 +1,3 @@
-/*
-document.getElementById("donateBtn").addEventListener("click", function () {
-    alert("Redirecionando para a página de doação...");
-});
-*/
-
 function loadCSV() {
     // Caminho para o arquivo CSV
     const csvFilePath = 'actions.csv';
