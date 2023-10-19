@@ -69,7 +69,7 @@ function loadGoogleSheetData() {
 // Função para inicializar a API do Google Sheets
 function initGoogleSheetsApi() {
     gapi.client.init({
-        apiKey: 'AIzaSyCKocwPx_0lAeKZq1R6TJ2lxJw6AHOWVug',
+        apiKey: 'AIzaSyDP2YPmfohOSkUf-OXM-0zRXcfM6IJCaho',
         discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     }).then(function() {
         loadGoogleSheetData();
