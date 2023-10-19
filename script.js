@@ -42,7 +42,7 @@ function loadGoogleSheetData() {
 
     gapi.client.sheets.spreadsheets.values.get({
         spreadsheetId: spreadsheetId,
-        range: 'info' // Substitua pelo nome da aba que você deseja ler
+        range: 'Eventos' // Substitua pelo nome da aba que você deseja ler
     }).then(function(response) {
         const data = response.result.values;
         const tableBody = document.querySelector('#actions-table tbody');
