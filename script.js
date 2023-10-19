@@ -66,6 +66,21 @@ function loadGoogleSheetData() {
     });
 }
 
+//Função para exibir mapa do Google
+function initMap() {
+    var coordenadas = { lat: -21.77656, lng: -45.84683 }; // Substitua com as coordenadas do local desejado
+    var mapa = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10, // Nível de zoom
+        center: coordenadas // Localização do mapa
+    });
+
+    var marcador = new google.maps.Marker({
+        position: coordenadas,
+        map: mapa,
+        title: "Local desejado"
+    });
+}
+
 // Função para inicializar a API do Google Sheets
 function initGoogleSheetsApi() {
     gapi.client.init({
