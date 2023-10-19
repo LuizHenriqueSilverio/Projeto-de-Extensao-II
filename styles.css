@@ -13,7 +13,14 @@ body {
 
 button > a {
     color: #fff;
+    text-decoration: none;
 }
+
+button > a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
 
 .custom-navbar {
     background-color: #1175B3; 
