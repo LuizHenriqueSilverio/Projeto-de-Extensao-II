@@ -36,7 +36,7 @@ function loadCSV() {
 // Função para carregar e exibir dados da planilha do Google Sheets
 function loadGoogleSheetData() {
     // ID da planilha do Google Sheets
-    const spreadsheetId = '1XuWvCCAklYjlNbOUiXn198HdFskEtzYH0AYvVehQrGc';
+    const spreadsheetId = '1NrKZXcG4BZ8YiVGgb7BkrDs5Cxvvn7xf1NyOKMswwC8';
     // ID da planilha dentro do documento (geralmente 0 para a primeira planilha)
     const sheetId = 0;
 
