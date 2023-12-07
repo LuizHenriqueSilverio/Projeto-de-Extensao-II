@@ -19,13 +19,12 @@
     </head>
 
     <body>
-        
         <nav class="navbar navbar-expand-md custom-navbar">
             <div class="container">
                 <div class="col-sm-2 order-1 order-md-0"> <!-- Logo à esquerda em dispositivos desktop -->
                     <img src="assets/img/Logo prefeitura.png" alt="Logo da prefeitura de Carvalhópolis" class="img-fluid">
                 </div>
-                <div class="order-0 order-md-1"> <!-- Ícone de hambúrguer à direita em dispositivos desktop -->
+                <div class="order-0 order-md-1">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuCollapse" aria-controls="menuCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i> 
                     </button>
@@ -54,6 +53,8 @@
                 </header>
             </div>
 
+            <h2 class="text-center">Confira os eventos marcados abaixo:</h2>
+
             <section class="project-actions mt-5" id="actions-table">
                 <table class="table">
                     <thead class="custom-blue-header">
@@ -70,9 +71,20 @@
             </section>
 
             <section class="donate mt-5 text-center">
-                <h2>Agende um evento</h2>
-                <p>Baixe a ficha para realizar o cadastro de evento.</p>
-                <button class="btn btn-primary" id="donateBtn"><a href="./assets/FICHA CADASTRO AGENDAMENTO DO CLUBE 2023.pdf" download>Baixar Ficha</a></button>
+                <h2 id="title2">Agende um evento</h2>
+
+                <p class="text-center">Responda o formulário abaixo para poder agendar o seu evento!</p>
+
+                <div class="container mt-5 google-form">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMeLHH74qONHjwrmlgaT-ofPLxK-WkNlbJl9rjqK2vgpV5jQ/viewform?embedded=true" width="100%" height="3169" frameborder="0" marginheight="0" marginwidth="0" id="form">Carregando…</iframe>
+                </div>
+
+                <div class="container  d-block d-md-none">
+                    <button class="btn btn-primary" id="donateBtn"><a href="https://docs.google.com/forms/d/e/1FAIpQLScMeLHH74qONHjwrmlgaT-ofPLxK-WkNlbJl9rjqK2vgpV5jQ/viewform?usp=sf_link" target="_blank">Abrir formulário</a></button>
+                </div>
+
+                <p>Ou, se preferir, baixe a ficha para realizar o cadastro de evento.</p>
+                <button class="btn btn-primary" id="donateBtn"><a href="./assets/FICHA CADASTRO AGENDAMENTO DO CLUBE 2023.pdf" target="_blank" download>Baixar Ficha</a></button>
             </section>
 
         </div>
