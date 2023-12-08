@@ -19,6 +19,8 @@ function loadGoogleSheetNews() {
         data.forEach(function(row) {
             const [title, newsDate, text, imageUrl] = row;
 
+            const imageId = extractIdFromDriveUrl(imageUrl);
+
             // Crie elementos HTML para cada notícia
             const newsContainer = document.createElement('div');
             newsContainer.classList.add('row', 'mb-5');
@@ -30,7 +32,7 @@ function loadGoogleSheetNews() {
                     <p>${text}</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="./assets/img/frente_clube.jpg" alt="${title}(imagem)" width="100%" height="100%">
+                    <img src="https://drive.google.com/uc?export=view&id=${imageId}" alt="${title}(imagem)" width="100%" height="100%">
                 </div>
                 <hr>
             `;
@@ -39,6 +41,18 @@ function loadGoogleSheetNews() {
             newsSection.appendChild(newsContainer);
         });
     });
+}
+
+// Função que extrai o que está entre /d/ e /view de uma string
+function extractIdFromDriveUrl(driveUrl) {
+    // Define a expressão regular
+    const regex = /\/d\/([a-zA-Z0-9_-]+)\/view/;
+
+    // Tenta fazer o casamento usando a expressão regular
+    const match = driveUrl.match(regex);
+
+    // Retorna o que está entre /d/ e /view ou null se não houver correspondência
+    return match ? match[1] : null;
 }
 
 // Inicialize a API do Google Sheets para Noticias
